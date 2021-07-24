@@ -58,10 +58,10 @@ class User(db.Document):
 
 @app.route("/user/")
 def user():
-    User(user_id=1, first_name="Hridoy",last_name="Das",email="hridoycseboy@gmail.com",
-    password="abc123").save()
-    User(user_id=2, first_name="Bishownath",last_name="Das",email="bishownathdas@gmail.com",
-    password="abc123").save()
+    # User(user_id=1, first_name="Hridoy",last_name="Das",email="hridoycseboy@gmail.com",
+    # password="abc123").save()
+    # User(user_id=2, first_name="Bishownath",last_name="Das",email="bishownathdas@gmail.com",
+    # password="abc123").save()
 
     users = User.objects.all()
     return render_template("user.html",users=users)
