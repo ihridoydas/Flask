@@ -33,10 +33,10 @@ def register():
 
 
 
-@app.route("/enrollment")
+@app.route("/enrollment", methods=["GET","POST"])
 def enrollment():
 
-    id = request.args.get('courseID')
-    title=request.args.get('title')
-    term =request.args.get('term')
+    id = request.form.get('courseID')
+    title=request.form.get('title')
+    term =request.form.get('term')
     return render_template("enrollment.html",enrollment=True,data={"id":id,"title":title,"term":term})
