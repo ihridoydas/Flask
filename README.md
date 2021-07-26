@@ -3,6 +3,7 @@ Full Stack Web Development with Flask
 
 
 Learning objectives
+
 1> Creating and running a simple Flask app
 
 2> Creating a Flask project
